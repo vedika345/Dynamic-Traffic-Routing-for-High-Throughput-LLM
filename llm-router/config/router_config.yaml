@@ -1,0 +1,35 @@
+# =====================================================================
+# LLM Router Configuration
+# =====================================================================
+# This file controls:
+#   1. Which Ollama server(s) the router talks to (for load balancing)
+#   2. Which local model is used for each "model role"
+#   3. The fallback chain used when a model fails / times out
+#   4. The complexity threshold that decides "simple" vs "complex" tasks
+# =====================================================================
+
+ollama:
+  # Add more URLs here if you run multiple Ollama instances
+  # (e.g. on different ports) for load balancing.
+  base_urls:
+    - "http://localhost:11434"
+    # - "http://localhost:11435"   # example: second Ollama instance
+
+# Logical "model roles" -> actual Ollama model tags.
+# Pull these with `ollama pull <model_tag>` before running the router.
+models:
+  simple_chat: "phi3:mini"          # fast, cheap, for short/simple chats
+  general: "llama3.2:3b"            # balanced general-purpose model
+  complex_reasoning: "llama3.1:8b"  # larger model for hard reasoning/math
+  code: "qwen2.5-coder:7b"          # specialized coding model
+  creative: "mistral:7b"            # creative writing
+
+# If the model chosen by the router fails (timeout, not pulled, server
+# down, etc.), the router walks down this list until one works.
+fallback_chain:
+  - "llama3.2:3b"
+  - "phi3:mini"
+
+routing_thresholds:
+  # complexity score is between 0.0 (very simple) and 1.0 (very complex)
+  complexity_high: 0.6

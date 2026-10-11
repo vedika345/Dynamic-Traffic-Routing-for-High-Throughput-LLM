@@ -1,0 +1,41 @@
+prompt,complexity
+"Hi there!",0
+"Hello, how are you?",0
+"What's 2 + 2?",0
+"What is the capital of Japan?",0
+"Define photosynthesis.",0
+"Tell me a joke.",0
+"Who wrote Hamlet?",0
+"What is the boiling point of water in Celsius?",0
+"Give me a synonym for happy.",0
+"What does HTTP stand for?",0
+"Translate 'hello' to French.",0
+"What's the square root of 16?",0
+"Name three primary colors.",0
+"What year did World War II end?",0
+"Is the Earth round?",0
+"What's the chemical formula for water?",0
+"How many continents are there?",0
+"What's a good name for a cat?",0
+"List five fruits.",0
+"What is the opposite of 'cold'?",0
+"Explain step by step how photosynthesis works at the molecular level, including the light-dependent and light-independent reactions.",1
+"Write a Python function that implements a binary search tree with insert, delete, and search methods, and explain the time complexity of each operation.",1
+"Derive the quadratic formula from the standard form of a quadratic equation, showing every algebraic step in detail.",1
+"Compare and contrast the economic policies of two countries and analyze their long-term impact on GDP growth, citing specific mechanisms.",1
+"Prove that the square root of 2 is irrational using a proof by contradiction.",1
+"Design a normalized database schema for an e-commerce platform, including tables for users, orders, and products, and explain the relationships between them.",1
+"Debug this code and explain what's wrong with it, then provide a corrected version with comments: def add(a,b): return a+b+",1
+"Write a detailed essay analyzing the themes of isolation and redemption in a novel, with supporting evidence from the text.",1
+"Explain the differences between supervised, unsupervised, and reinforcement learning, with concrete examples of algorithms for each category.",1
+"Walk me through, step by step, how to set up a CI/CD pipeline for a microservices architecture using Docker and Kubernetes.",1
+"Analyze the causes and consequences of the 2008 financial crisis in detail, including the role of mortgage-backed securities.",1
+"Implement a REST API in Python using FastAPI with authentication, rate limiting, and database integration, and explain each component.",1
+"Solve this system of differential equations step by step and explain the physical meaning of the solution.",1
+"Compare three different sorting algorithms in terms of time complexity, space complexity, and best/worst case scenarios.",1
+"Explain the architecture of a transformer neural network, including self-attention and positional encoding, in detail.",1
+"Write a recursive function to compute the nth Fibonacci number, then optimize it using memoization and explain the complexity improvement.",1
+"Provide a detailed step-by-step plan for migrating a monolithic application to a microservices architecture, including risks and mitigations.",1
+"Analyze this dataset's statistical properties and recommend an appropriate machine learning model, justifying your reasoning in detail.",1
+"Explain how garbage collection works in Python, including reference counting and the generational garbage collector, in depth.",1
+"Derive and explain Bayes' theorem from first principles, then apply it to a real-world example step by step.",1
